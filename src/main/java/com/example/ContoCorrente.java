@@ -24,7 +24,7 @@ public class ContoCorrente {
             throw new IllegalArgumentException("Il saldo iniziale non può essere negativo");
         }
         else if(importo > saldo){
-            throw new SaldoInsufficienteException("Saldo non sufficiente per il prelievo")
+            throw new SaldoInsufficienteException("Saldo non sufficiente per il prelievo");
         }
         else
             saldo -=importo;
