@@ -6,12 +6,12 @@ public class Main {
         System.out.println("Saldo iniziale: " + conto.getSaldo());
 
         try{
-            conto.prelievo(150.0);
+            conto.prelievo(50.0);
         } catch (SaldoInsufficienteException e) {
             System.out.println("Errore: " + e.getMessage());
         } catch (IllegalArgumentException e) {
             System.out.println("Errore: " + e.getMessage());
-        }
+        } System.out.println("Operazione completata. Saldo attuale: " + conto.getSaldo() );
 
         try{
             conto.deposito(50.0);
